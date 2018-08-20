@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Register Problem"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+    <HorizontalScrollView
+        android:id="@+id/h_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trainer_feedback1">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentFeedback"
+    android:background="@color/app_theme"
+    android:padding="20dp">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:id="@+id/stu_pro_table">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                android:fontFamily="@font/worksans_medium"
+                android:text="Session Name"
+                android:textColor="@color/button"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                android:fontFamily="@font/worksans_medium"
+                android:text="Select"
+                android:gravity="center"
+                android:textColor="@color/button"
+                android:textSize="16dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_weight="5"
+            android:layout_marginRight="5dp"
+            android:text="Session Name 1"
+            android:textAppearance="@style/StuList"/>
+
+        <ToggleButton
+            android:layout_weight="5"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:textAppearance="@style/StuList"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
+    </ScrollView>
+    </HorizontalScrollView>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/h_scroll"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_fill"
+        android:onClick="reg_stu_prob1"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000000"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"/>
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="ACCOUNTABILITY"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/button_fill"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/trainer_feedback1"
+        android:id="@+id/r5">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="40dp"
+    android:background="@drawable/ic_scattered_triangles">
+
+    <TextView
+        android:id="@+id/dtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="40dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Name"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <TextView
+        android:id="@+id/dtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leap-ID :"
+        android:layout_below="@+id/dtv"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_leapID1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Leap Id"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv1"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <TextView
+        android:id="@+id/dtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:layout_below="@+id/dtv1"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DDMMYYYY"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv2"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/dtv2"
+        android:layout_marginTop="20dp"
+        android:background="#FCBF38"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/dtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch :"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_batch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Batch"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv3"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <TextView
+        android:id="@+id/dtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time :"
+        android:layout_below="@+id/dtv3"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_batch_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HH:MM:SS"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv4"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <TextView
+        android:id="@+id/dtv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Session :"
+        android:layout_below="@+id/dtv4"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_next_session1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Session"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv5"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/dtv5"
+        android:layout_marginTop="20dp"
+        android:background="#FCBF38"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/dtv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Uptake :"
+        android:layout_below="@+id/line_2"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_app_uptake1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Uptake"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv6"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+
+    <TextView
+        android:id="@+id/dtv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendence :"
+        android:layout_below="@+id/dtv6"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_attendence1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendence Count"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@+id/dtv7"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

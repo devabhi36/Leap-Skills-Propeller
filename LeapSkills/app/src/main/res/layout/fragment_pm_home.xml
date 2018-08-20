@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome"
+    android:background="@color/app_theme"
+    android:padding="40dp"
+    android:id="@+id/r12">
+
+    <TextView
+        android:id="@+id/ttv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centre"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+
+    <Spinner
+        android:id="@+id/select_centre_pm"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ttv1"
+        android:layout_marginTop="16dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"
+        android:background="@drawable/spinner_back"/>
+
+    <Button
+        android:id="@+id/pre_assess1"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_below="@+id/select_centre_pm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_fill"
+        android:fontFamily="@font/barlow_m"
+        android:onClick="pre_assess"
+        android:shadowColor="#000000"
+        android:text=" PRE ASSESSMENT"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/pm_stu_info1"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pre_assess1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_fill"
+        android:onClick="pm_stu_info"
+        android:shadowColor="#000000"
+        android:text="STUDENT INFORMATION"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"/>
+
+    <Button
+        android:id="@+id/batch_info"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pm_stu_info1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_fill"
+        android:onClick="batch_info"
+        android:shadowColor="#000000"
+        android:text="BATCH INFORMATION"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"/>
+
+    <Button
+        android:id="@+id/batch_allot"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/batch_info"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_fill"
+        android:onClick="batch_allot"
+        android:shadowColor="#000000"
+        android:text="BATCH ALLOTMENT"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"/>
+
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/batch_info"
+        android:layout_toRightOf="@+id/pre_assess1"
+        android:background="@drawable/rocket_clouds1" />
+
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="95dp"
+        android:layout_alignTop="@+id/pre_assess1"
+        android:layout_toRightOf="@+id/pre_assess1"
+        android:background="@drawable/clouds1" />
+
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/pm_stu_info1"
+        android:layout_toLeftOf="@+id/pre_assess1"
+        android:background="@drawable/clouds1" />
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

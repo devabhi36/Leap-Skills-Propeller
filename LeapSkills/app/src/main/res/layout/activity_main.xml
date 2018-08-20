@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="378dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_fill"
+        android:shadowColor="#000000"
+        android:textSize="14dp"
+        android:onClick="login"
+        android:fontFamily="@font/barlow_r"/>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="305dp"
+        android:text="SIGNUP"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_fill"
+        android:shadowColor="#000000"
+        android:textSize="14dp"
+        android:onClick="sign_up"
+        android:fontFamily="@font/barlow_r"/>
+
+</RelativeLayout>

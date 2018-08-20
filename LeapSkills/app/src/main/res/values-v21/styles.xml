@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="NavigationText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+    <style name="navigation_title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FragmentText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+    <style name="TitleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/worksans_medium</item>
+    </style>
+    <style name="TitleText1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/barlow_m</item>
+    </style>
+    <style name="StuList" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/button</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+    <style name="Leap_ID" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="ATTENDANCE"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/trainer_title1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r23"
+        android:background="@drawable/ic_scattered_triangles">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:fontFamily="@font/worksans_medium"
+        android:paddingTop="5dp"
+        android:text="Hello Trainer!"
+        android:textColor="@color/button"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/ttv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch"
+        android:layout_below="@+id/hi"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+
+    <Spinner
+        android:id="@+id/select_batch"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ttv1"
+        android:layout_marginTop="16dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"
+        android:background="@drawable/spinner_back"/>
+
+    <TextView
+        android:id="@+id/ttv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Session"
+        android:layout_below="@+id/select_batch"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+
+    <Spinner
+        android:id="@+id/select_session"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ttv2"
+        android:layout_marginTop="16dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"
+        android:background="@drawable/spinner_back"/>
+
+    <TextView
+        android:id="@+id/ttv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Date"
+        android:layout_below="@+id/select_session"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+
+    <EditText
+        android:id="@+id/attendence_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ttv3"
+        android:layout_below="@+id/ttv3"
+        android:layout_marginTop="20dp"
+        android:hint="DD-MM-YYYY"
+        android:textColorHint="@color/button"
+        android:editable="false"
+        android:inputType="none"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"
+        android:textColor="@color/button"
+        />
+
+    <Button
+        android:id="@+id/fattendence"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/attendence_date"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_fill"
+        android:onClick="fattendence"
+        android:shadowColor="#000000"
+        android:text="FIRST"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/lattendence"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/attendence_date"
+        android:layout_alignEnd="@+id/select_session"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_fill"
+        android:onClick="lattendence"
+        android:shadowColor="#000000"
+        android:text="LAST"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"
+        android:enabled="true"/>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

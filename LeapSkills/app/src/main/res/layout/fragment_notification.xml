@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    tools:context=".Notification">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_scattered_triangles">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="NOTIFICATIONS"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trainer_feedback1"
+        android:padding="20dp"
+        android:background="@drawable/ic_scattered_triangles">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_centerHorizontal="true">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="4"
+                            android:id="@+id/attendence_table10">
+
+                            <TableRow
+                                android:layout_marginBottom="20dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:text="Date"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/button"
+                                    android:textSize="16dp"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:textStyle="bold"
+                                    android:text="Type"
+                                    android:textColor="@color/button"
+                                    android:textSize="16dp"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:textStyle="bold"
+                                    android:text="Message"
+                                    android:textColor="@color/button"
+                                    android:textSize="16dp"
+                                    android:gravity="center"/>
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+            </HorizontalScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

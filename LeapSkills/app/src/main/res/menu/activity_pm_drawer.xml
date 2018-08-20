@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pm_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/pre_assess"
+            android:title="Pre Assessment" />
+        <item
+            android:id="@+id/view_stu"
+            android:title="View Student" />
+        <item
+            android:id="@+id/create_batch"
+            android:title="Create Batch" />
+       <!-- <item
+            android:id="@+id/view_student_problem"
+            android:title="View Student Problem" />
+        <item
+            android:id="@+id/view_trainer_problrm"
+            android:title="View Trainer Problem"/>-->
+        <item
+            android:id="@+id/assign_batch"
+            android:title="Assign Batch" />
+        <item
+            android:id="@+id/pm_notification"
+            android:title="Notification"/>
+        <item
+            android:id="@+id/pm_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

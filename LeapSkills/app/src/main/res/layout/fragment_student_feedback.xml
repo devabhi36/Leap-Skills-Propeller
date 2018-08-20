@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_scattered_triangles">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="FEEDBACK"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trainer_feedback1"
+        android:id="@+id/r16">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentFeedback"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="40dp">
+
+    <TextView
+        android:id="@+id/ssubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <Spinner
+        android:id="@+id/feedback_option"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ssubject"
+        android:layout_marginTop="15dp"
+        android:entries="@array/stu_feedback"
+        android:background="@drawable/spinner_back"/>
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:layout_below="@+id/feedback_option"
+        android:textAppearance="@style/FragmentText"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/worksans_medium"/>
+    <ScrollView
+        android:id="@+id/scv"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/body"
+        android:layout_marginTop="15dp"
+        android:background="@color/app_theme">
+        <EditText
+            android:id="@+id/sfeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAppearance="@style/FragmentText"
+            android:hint="Enter your message here"
+            android:textColorHint="@color/button"
+            android:textColor="@color/button"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/stu_feedback1"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scv"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_fill"
+        android:text="SUBMIT"
+        android:onClick="stu_feedback"
+        android:fontFamily="@font/barlow_m"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:shadowColor="#000000"/>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_theme"
+        android:src="@drawable/line_drawing_3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="49dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/leap_id"
+            android:fontFamily="@font/worksans_medium"
+            android:shadowColor="#000"
+            android:text="Leap ID"
+            android:textAlignment="center"
+            android:textColor="#040404"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/leap_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/worksans_regular"
+            android:hint="LS99999999"
+            android:paddingRight="15dp"
+            android:shadowColor="@color/button"
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans_medium"
+            android:shadowColor="#000"
+            android:layout_below="@+id/leap_id"
+            android:layout_marginTop="20dp"
+            android:text="Date Of Birth"
+            android:textAlignment="center"
+            android:textColor="#040404"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:fontFamily="@font/worksans_regular"
+            android:hint="DDMMYYYY"
+            android:inputType="numberPassword"
+            android:paddingRight="15dp"
+            android:shadowColor="@color/button"
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/worksans_medium"
+            android:shadowColor="#000"
+            android:text="Remember me"
+            android:textAlignment="center"
+            android:textColor="#040404"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv3"
+            android:layout_centerHorizontal="true"
+            android:background="@color/app_theme"
+            android:focusable="auto"
+            android:shadowColor="@color/button"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textColorHighlight="@color/button"
+            android:textColorHint="@color/button"
+            android:textColorLink="@color/button"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/flogin"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_fill"
+            android:fontFamily="@font/barlow_m"
+            android:gravity="center"
+            android:onClick="flogin"
+            android:shadowColor="#000000"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_visibility_off_24px" />
+
+        <ImageView
+            android:id="@+id/hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_visibility_24px"
+            android:visibility="gone" />
+        <!-- <Button
+        android:id="@+id/stu_login"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_fill"
+        android:onClick="pm_login"
+        android:shadowColor="#000000"
+        android:text="PM_LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_above="@+id/tv1"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/pm_login"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_fill"
+        android:onClick="trainer_login"
+        android:shadowColor="#000000"
+        android:text="TRAINER_LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_above="@+id/stu_login"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="18dp"
+        android:layout_below="@+id/flogin"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button"
+        android:text="Sign Up!"
+        android:layout_alignTop="@+id/text"
+        android:textSize="18dp"
+        android:onClick="sign_up"
+        android:layout_alignEnd="@+id/remember_me"/> -->
+
+    </RelativeLayout>
+</RelativeLayout>

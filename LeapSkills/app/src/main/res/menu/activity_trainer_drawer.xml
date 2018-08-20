@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/trainer_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/attendence"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/stu_info"
+            android:title="Student Information" />
+        <item
+            android:id="@+id/trainer_schedule"
+            android:title="Schedule"/>
+        <item
+            android:id="@+id/trainer_notification"
+            android:title="Notification"/>
+        <!--<item
+            android:id="@+id/view_stu_problem"
+            android:title="View Student Problem" />
+        <item
+            android:id="@+id/reg_trainer_prob"
+            android:title="Register Problem"/>-->
+        <item
+            android:id="@+id/trainer_feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/trainer_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

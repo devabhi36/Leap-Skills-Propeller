@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".show">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E6E6E6"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_below="@+id/iv1"
+        android:id="@+id/trainer_feedback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:text="New Notification!"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trainer_feedback2"
+        android:padding="49dp"
+        android:background="@drawable/ic_scattered_triangles">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:text="SUBJECT:"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:text="New Title"
+        android:textColor="#FF4500"
+        android:layout_toRightOf="@+id/subject"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:text="MESSAGE:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/subject"
+            android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:text="New Message"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/button"
+        android:layout_toRightOf="@+id/body"
+        android:layout_alignStart="@+id/title"/>
+    </RelativeLayout>
+
+</RelativeLayout>

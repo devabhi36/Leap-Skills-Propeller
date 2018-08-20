@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:text="Hi!"
+        android:textAppearance="@style/TitleText1"
+        android:textSize="20dp"
+        android:textColor="#065B6D"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trainer_feedback2"
+        android:id="@+id/r17"
+        android:background="@drawable/ic_scattered_triangles">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome"
+    android:padding="25dp">
+
+
+            <TextView
+                android:id="@+id/dtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leap-ID :"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_leapID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student's Leap Id"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv1"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password :"
+                android:layout_below="@+id/dtv1"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_password1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DDMMYYYY"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv2"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batch :"
+                android:layout_below="@+id/dtv2"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_batch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student's Batch"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv3"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:layout_below="@+id/dtv3"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_batch_time_start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HH:MM"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv4"
+                android:textAppearance="@style/FragmentText"/>
+            <TextView
+                android:id="@+id/dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_toRightOf="@+id/stu_batch_time_start1"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/dtv4"
+                android:textAppearance="@style/FragmentText"/>
+            <TextView
+                android:id="@+id/stu_batch_time_end1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HH:MM"
+                android:layout_toRightOf="@+id/dash"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/dtv4"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Session :"
+                android:layout_below="@+id/dtv4"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_next_session1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Session"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv5"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Uptake :"
+                android:layout_below="@+id/dtv5"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_app_uptake1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Uptake"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv6"
+                android:textAppearance="@style/FragmentText"/>
+
+            <TextView
+                android:id="@+id/dtv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendence :"
+                android:layout_below="@+id/dtv6"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_attendence1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendence Count"
+                android:layout_marginLeft="130dp"
+                android:layout_alignTop="@+id/dtv7"
+                android:textAppearance="@style/FragmentText"/>
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/dtv7"
+                android:layout_marginTop="20dp"
+                android:background="#FCBF38"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/dtv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pre-Assessment ID :  "
+                android:layout_below="@+id/line_1"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_pre_assessment_ID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@+id/dtv8"
+                android:layout_alignTop="@+id/dtv8"
+                android:textAppearance="@style/FragmentText"/>
+
+    <Button
+        android:id="@+id/app_link1"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/dtv8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_fill"
+        android:fontFamily="@font/barlow_m"
+        android:onClick="app_link1"
+        android:shadowColor="#000000"
+        android:text="START TEST"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/copy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy ID"
+                android:layout_alignTop="@id/app_link1"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/app_link1"
+                android:layout_marginTop="20dp"
+                android:background="#FCBF38"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/dtv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello English ID :  "
+                android:layout_below="@+id/line_2"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_hello_english_ID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@+id/dtv9"
+                android:layout_alignTop="@+id/dtv9"
+                android:layout_alignStart="@+id/stu_pre_assessment_ID1"
+                android:textAppearance="@style/FragmentText"/>
+
+            <Button
+                android:id="@+id/app_link2"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_below="@+id/dtv9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_fill"
+                android:onClick="app_link2"
+                android:shadowColor="#000000"
+                android:text="DOWNLOAD APP"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/barlow_r"/>
+
+            <TextView
+                android:id="@+id/copy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy ID"
+                android:layout_alignTop="@id/app_link2"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/app_link2"
+                android:layout_marginTop="20dp"
+                android:background="#FCBF38"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/dtv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enguru ID :  "
+                android:layout_below="@+id/line_3"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/FragmentText"
+                android:fontFamily="@font/worksans_medium"/>
+            <TextView
+                android:id="@+id/stu_en_grur_ID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@+id/dtv10"
+                android:layout_alignTop="@+id/dtv10"
+                android:layout_alignStart="@+id/stu_pre_assessment_ID1"
+                android:textAppearance="@style/FragmentText"/>
+
+            <Button
+                android:id="@+id/app_link3"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_below="@+id/dtv10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_fill"
+                android:onClick="app_link3"
+                android:shadowColor="#000000"
+                android:text="DOWNLOAD APP"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/barlow_r"/>
+
+            <TextView
+                android:id="@+id/copy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy ID"
+                android:layout_alignTop="@id/app_link3"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/app_link3"
+        android:layout_marginTop="20dp"
+        android:background="#FCBF38"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/dtv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post-Assessment ID :  "
+        android:layout_below="@+id/line_4"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+    <TextView
+        android:id="@+id/stu_post_assessment_ID1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toRightOf="@+id/dtv11"
+        android:layout_alignTop="@+id/dtv11"
+        android:layout_alignStart="@+id/stu_pre_assessment_ID1"
+        android:textAppearance="@style/FragmentText"/>
+
+    <Button
+        android:id="@+id/app_link4"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/dtv11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_fill"
+        android:onClick="app_link4"
+        android:shadowColor="#000000"
+        android:text="START TEST"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_r"/>
+
+    <TextView
+        android:id="@+id/copy4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy ID"
+        android:layout_alignTop="@id/app_link4"
+        android:layout_alignParentEnd="true"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

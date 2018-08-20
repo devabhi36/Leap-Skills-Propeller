@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Batch_Information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_scattered_triangles">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_feedback1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="BATCH INFORMATION"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/bitv1"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:layout_below="@+id/trainer_feedback1"
+        android:padding="5dp"
+        android:text="Center Name :"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/center_name"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:layout_below="@+id/trainer_feedback1"
+        android:padding="5dp"
+        android:text="Selected Center Name"
+        android:textAppearance="@style/FragmentText"
+        android:layout_toRightOf="@+id/bitv1"
+        android:layout_marginLeft="20dp"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/bitv1"
+        android:background="#FCBF38"
+        android:layout_alignStart="@+id/bitv1"
+        android:layout_marginRight="25dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/h_scroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1">
+    <ScrollView
+        android:id="@+id/v_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:id="@+id/attendence_table4"
+        android:background="#fff">
+
+        <TableRow
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                android:fontFamily="@font/worksans_medium"
+                android:text="Batch Info"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/title_fill"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="5"
+                android:fontFamily="@font/worksans_medium"
+                android:text="Registered  Students"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/title_fill"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
+    </ScrollView>
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/h_scroll1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_fill"
+        android:onClick="create_batch1"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000000"
+        android:text="CREATE BATCH"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"/>
+    </RelativeLayout>
+</RelativeLayout>

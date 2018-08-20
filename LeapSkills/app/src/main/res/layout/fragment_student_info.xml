@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/trainer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="STUDENT INFORMATION"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textAppearance="@style/TitleText1"
+        android:background="@drawable/title_fill"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/trainer_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r18"
+        android:background="@drawable/ic_scattered_triangles">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/ttv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch"
+        android:paddingTop="5dp"
+        android:textAppearance="@style/FragmentText"
+        android:fontFamily="@font/worksans_medium"/>
+
+    <Spinner
+        android:id="@+id/select_batch1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ttv1"
+        android:layout_marginTop="16dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"
+        android:background="@drawable/spinner_back"/>
+
+    <Button
+        android:id="@+id/stu_info2"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/select_batch1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_fill"
+        android:onClick="stu_info"
+        android:shadowColor="#000000"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_m"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

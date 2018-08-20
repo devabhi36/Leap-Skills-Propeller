@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Leap Skills</string>
+    <string name="title_activity_stu_dashboard">stu_dashboard</string>
+    <string name="title_activity_trainer_dashboard">trainer_dashboard</string>
+    <string name="title_activity_pm_dashboard">PM_dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="stu_feedback">
+
+        <item>Select an option</item>
+        <item>General Feedback</item>
+        <item>Technical Issue on Tool</item>
+        <item>Technical Issue on Assessment</item>
+        <item>Trainer Related</item>
+        <item>Learning Related</item>
+    </string-array>
+
+    <string-array name="trainer_feedback">
+
+        <item>Select an option</item>
+        <item>General Feedback</item>
+        <item>Technical Issue on Tool</item>
+        <item>Technical Issue on Assessment</item>
+        <item>Student Related</item>
+        <item>Centre Related</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,2 @@
+# Leap-Skills-Propeller
+Leap Skills app is a tech-driven platform which aims to increase the efficiency of our blended learning programs. It aims to assist our trainers and program developers in designing student-centric curricula and provides our strategy and operations team with informative business intelligence. Every student is different with respect to their content consumption and learning pace. Our application helps our team adapt to student needs at both an academic and operational level.
